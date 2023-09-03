@@ -1,5 +1,5 @@
 {% set name = "gitui" %}
-{% set version = "0.23.0" %}
+{% set version = "0.24.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/extrawurst/gitui/archive/v{{ version }}.tar.gz
-  sha256: 5180d5d8fd2fe6400148d6078b4b318c7530ca6c27ea8d8c0882f2e4d9064a80
+  sha256: f8a0a4b3117a40d5fcfe29618d350027bebe3fbcee39f0aef85cb9a5325453b7
 
 build:
   number: 0
@@ -31,10 +31,10 @@ test:
 about:
   home: https://github.com/extrawurst/gitui
   summary: 'blazing fast terminal-ui for git'
-  description:  'Blazing 💥 fast terminal-ui for git written in rust 🦀'
+  description: 'Blazing 💥 fast terminal-ui for git written in rust 🦀'
   license: MIT
   license_family: MIT
-  license_file: 
+  license_file:
     - THIRDPARTY.yml
     - LICENSE.md
   dev_url: https://github.com/extrawurst/gitui
