@@ -64,7 +64,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-gitui-green.svg)](https://anaconda.org/conda-forge/gitui) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gitui.svg)](https://anaconda.org/conda-forge/gitui) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gitui.svg)](https://anaconda.org/conda-forge/gitui) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gitui.svg)](https://anaconda.org/conda-forge/gitui) |
+| [gitui](https://anaconda.org/conda-forge/gitui) | [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gitui/badges/downloads.svg)](https://anaconda.org/conda-forge/gitui) | [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gitui/badges/version.svg)](https://anaconda.org/conda-forge/gitui) | [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gitui/badges/platforms.svg)](https://anaconda.org/conda-forge/gitui) |
 
 Installing gitui
 ================
