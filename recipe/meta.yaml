@@ -1,5 +1,5 @@
 {% set name = "gitui" %}
-{% set version = "0.25.1" %}
+{% set version = "0.25.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/extrawurst/gitui/archive/v{{ version }}.tar.gz
-  sha256: 78d31ba66de1521477aef1642c798a385106ff4858f59e79775ba08a694d0ae4
+  sha256: 5a67d526e22533952a747cb34eb2430a1340dd3139f60a785f579bba4a6aa5ed
 
 build:
   number: 0
