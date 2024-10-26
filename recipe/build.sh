@@ -1,6 +1,9 @@
-set -ex
+#!/usr/bin/env bash
+
+set -o xtrace -o nounset -o pipefail -o errexit
+
+export CARGO_PROFILE_RELEASE_STRIP=symbols
+export CARGO_PROFILE_RELEASE_LTO=fat
+
 cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
-cargo build --release --locked
-cargo install --path . --root $PREFIX --locked
-rm $PREFIX/.crates2.json
-rm $PREFIX/.crates.toml
+cargo install --no-track --locked --root "$PREFIX" --path .

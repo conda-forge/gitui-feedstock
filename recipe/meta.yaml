@@ -10,7 +10,7 @@ source:
   sha256: 8075e180f3b01ff0c290b690488a7628c44b4de12346e04a77d823914a48918b
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports:
     - openssl
 
@@ -43,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - TheBlackSheep3
+    - dbast
