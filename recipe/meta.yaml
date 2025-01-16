@@ -1,5 +1,5 @@
 {% set name = "gitui" %}
-{% set version = "0.26.3" %}
+{% set version = "0.27.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/extrawurst/gitui/archive/v{{ version }}.tar.gz
-  sha256: 8075e180f3b01ff0c290b690488a7628c44b4de12346e04a77d823914a48918b
+  sha256: 55a85f4a3ce97712b618575aa80f3c15ea4004d554e8899669910d7fb4ff6e4b
 
 build:
-  number: 1
+  number: 0
   ignore_run_exports:
     - openssl
 
@@ -19,6 +19,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('rust') }}
+    - cmake
     - make
     - perl  # [win]
     - cargo-bundle-licenses
