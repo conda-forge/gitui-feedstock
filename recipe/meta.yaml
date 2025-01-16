@@ -19,6 +19,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('rust') }}
+    - cmake
     - make
     - perl  # [win]
     - cargo-bundle-licenses
