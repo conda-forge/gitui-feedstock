@@ -1,0 +1,56 @@
+schema_version: 1
+
+context:
+  name: gitui
+  version: 0.28.1
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/extrawurst/gitui/archive/v${{ version }}.tar.gz
+  sha256: 0400cbf59605490b5fb8779f9af41fa4d7a1bb748093ca0e13156a5dff31c7aa
+
+build:
+  number: 1
+  script: build
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
+    - ${{ compiler('rust') }}
+    - cmake
+    - make
+    - if: win
+      then: perl
+    - cargo-bundle-licenses
+  host:
+    - openssl
+  ignore_run_exports:
+    from_package:
+      - openssl
+
+tests:
+  - package_contents:
+      bin:
+        - gitui
+  - script:
+      - gitui --help
+
+about:
+  homepage: https://github.com/extrawurst/gitui
+  repository: https://github.com/extrawurst/gitui
+  summary: blazing fast terminal-ui for git
+  description: Blazing 💥 fast terminal-ui for git written in rust 🦀
+  license: MIT
+  license_family: MIT
+  license_file:
+    - THIRDPARTY.yml
+    - LICENSE.md
+
+extra:
+  recipe-maintainers:
+    - TheBlackSheep3
+    - dbast
